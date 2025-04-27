@@ -99,6 +99,19 @@ taidepix art.tif --color
 taidepix scenery.jpeg -a stucki -w 120
 ```
 
+## Screenshots
+
+Here are some examples of Taidepix in action:
+
+**ASCII Output:**
+![Taidepix ASCII output example](screenshots/Screenshot%202025-04-27%20at%2019.12.39.png)
+
+**Block Character Output:**
+![Taidepix Block character output example](screenshots/Screenshot%202025-04-27%20at%2019.14.09.png)
+
+**Color Output:**
+![Taidepix Color output example](screenshots/Screenshot%202025-04-27%20at%2019.15.24.png)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
