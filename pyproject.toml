@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taidepix"
+version = "0.1.0"
+description = "A CLI tool for dithering images and displaying them in the terminal."
+authors = [
+    { name = "abderrahman gaga", email = "agaga@student.hive.fi" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = [
+	"CLI",
+	"Terminal",
+	"ASCII art",
+	"Pixel art",
+	"Image processing",
+	"Terminal graphics",
+	"Image dithering",
+	"Image visualization",
+	"Dithering algorithms"
+]
+dependencies = [
+    "Pillow>=9.0.0",
+    "numpy>=1.21.0"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+]
+[project.scripts]
+taidepix = "taidepix.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}

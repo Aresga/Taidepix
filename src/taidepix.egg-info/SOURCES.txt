@@ -1,0 +1,14 @@
+pyproject.toml
+src/taidepix/__init__.py
+src/taidepix/cli.py
+src/taidepix.egg-info/PKG-INFO
+src/taidepix.egg-info/SOURCES.txt
+src/taidepix.egg-info/dependency_links.txt
+src/taidepix.egg-info/entry_points.txt
+src/taidepix.egg-info/requires.txt
+src/taidepix.egg-info/top_level.txt
+src/taidepix/algorithms/__init__.py
+src/taidepix/algorithms/dither_algorithms.py
+src/taidepix/utils/__init__.py
+src/taidepix/utils/image_display.py
+src/taidepix/utils/image_loader.py

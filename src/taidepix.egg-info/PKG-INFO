@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: taidepix
+Version: 0.1.0
+Summary: A CLI tool for dithering images and displaying them in the terminal.
+Author-email: abderrahman gaga <agaga@student.hive.fi>
+Keywords: CLI,Terminal,ASCII art,Pixel art,Image processing,Terminal graphics,Image dithering,Image visualization,Dithering algorithms
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow>=9.0.0
+Requires-Dist: numpy>=1.21.0
