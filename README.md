@@ -41,7 +41,7 @@ If you want to install it for development (e.g., after cloning the repository):
 
 ```bash
 # Clone the repository (if you haven't already)
-# git clone <your-repo-url>
+# git clone https://github.com/Aresga/Taidepix/
 # cd Taidepix
 
 # Create and activate a virtual environment (optional but recommended)
