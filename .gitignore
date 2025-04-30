@@ -402,5 +402,4 @@ FodyWeavers.xsd
 # Junk from python instalation 
 src/*.egg
 src/*.egg-info
-dist/
 build/

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "taidepix"
-version = "0.1.0"
+version = "0.1.1"
 description = "A CLI tool for dithering images and displaying them in the terminal."
 authors = [
     { name = "abderrahman gaga", email = "agaga@student.hive.fi" }
