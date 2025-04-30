@@ -1,5 +1,5 @@
 import argparse
-from taidepix.utils.image_loader import load_image # Updated import
+from taidepix.utils.image_loader import load_image
 from taidepix.algorithms.dither_algorithms import DitherAlgorithms
 from taidepix.utils.image_display import image_display
 import sys
@@ -30,12 +30,12 @@ def main():
     parser = argparser()
     args = parser.parse_args()
 
-    # Load the original image in color
+    # >--- Load the original image in color <---- 
     img_color = load_image(args.image_path)
-    if img_color is None: # Handle potential loading errors if loader returns None
+    if img_color is None:
          sys.exit(1)
 
-    # --- Dithering Logic (only if not using --color) ---
+    # >--- Dithering Logic (only if not using --color) ---< 
     dithered_img = None
     if not args.color:
         # Convert to grayscale *only* for dithering
@@ -45,7 +45,7 @@ def main():
             dithered_img = dither_func(img_gray, threshold=150)
         else:
             dithered_img = dither_func(img_gray)
-    # --- End Dithering Logic ---
+    # >--- End Dithering Logic ---<
 
     # Choose which image to display
     display_img = img_color if args.color else dithered_img

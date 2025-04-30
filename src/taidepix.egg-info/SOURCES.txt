@@ -1,3 +1,5 @@
+LICENSE
+README.md
 pyproject.toml
 src/taidepix/__init__.py
 src/taidepix/cli.py
