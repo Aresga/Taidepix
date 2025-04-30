@@ -49,8 +49,6 @@ def main():
 
     # Choose which image to display
     display_img = img_color if args.color else dithered_img
-
-    # Pass the chosen image and color flag to image_display
     ascii_art = image_display(display_img, width=args.width, charset=args.charset, color=args.color)
     print(ascii_art)
 
