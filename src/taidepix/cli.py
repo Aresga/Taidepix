@@ -21,6 +21,7 @@ def argparser():
     parser.add_argument('image_path', help='Path to the input image')
     parser.add_argument('--width', '-w', type=int, default=80, help='Output width in characters (default: 80)')
     parser.add_argument('--algorithm', '-a', choices=ALGORITHM_MAP.keys(), default='floyd_steinberg', help='Dithering algorithm to use')
+    parser.add_argument('--threshold', '-t', type=int, default=150, help='set the threshold for the simple threshold algorithm')
     parser.add_argument('--charset', '-c', choices=['ascii', 'blocks', 'braille'], default='ascii', help='Character set for output (ascii, blocks, or braille)')
     parser.add_argument('--color', action='store_true', help='Enable 24-bit color output (RGB blocks)')
     parser.add_argument('--version', action='version', version='%(prog)s 1.0')
@@ -42,7 +43,7 @@ def main():
         img_gray = img_color.convert('L')
         dither_func = ALGORITHM_MAP[args.algorithm]
         if args.algorithm == 'simple_threshold':
-            dithered_img = dither_func(img_gray, threshold=150)
+            dithered_img = dither_func(img_gray, threshold=args.threshold)
         else:
             dithered_img = dither_func(img_gray)
     # >--- End Dithering Logic ---<
