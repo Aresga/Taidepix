@@ -74,6 +74,7 @@ taidepix <image_path> [options]
 
 *   `--width` or `-w`: Set the output width in characters (default: 80).
 *   `--algorithm` or `-a`: Choose the dithering algorithm (default: `floyd_steinberg`). Available: `floyd_steinberg`, `simple_threshold`, `random`, `ordered`, `atkinson`, `burkes`, `sierra`, `jjn`, `stucki`.
+*   `--threshold` or `-t`: If you chose to use simple threshold algorithm you can then adjust it (default: 150).
 *   `--charset` or `-c`: Choose the character set for non-color output (default: `ascii`). Available: `ascii`, `blocks`, `braille`.
 *   `--color`: Enable 24-bit color output (uses block characters, overrides dithering and charset).
 *   `--version`: Show the program's version number and exit.
